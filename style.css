@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+    color: black;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0vw 4vw;
+}
+
+.logo {
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+.section-part {
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+
+}
+
+.section-part a {
+    text-decoration: none;
+    font-size: 1rem;
+
+}
+
+
+.section-part li {
+    margin: 2rem;
+    position: relative;
+
+}
+
+.main ul li::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #FF735C;
+    top: 20px;
+    left: 0;
+    position: absolute;
+
+}
+
+.main ul li:hover::after {
+    width: 100%;
+    transition: all 0.40s ease-in;
+}
+
+.main i {
+    font-size: 1.5rem;
+    display: none;
+    font-weight: 800;
+}
+
+.bttn {
+    background-color: #FF735C;
+    color: white;
+    font: size 1vw;
+    padding: 1vw 2vw;
+    margin: 2vw 1.25vw;
+    border-radius: 1vw;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+.bttn:hover {
+    background-color: #FF735C;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.content {
+    height: calc(100% - 100px);
+    width: 100%;
+    display: flex;
+}
+
+.section1 {
+    height: 100%;
+    width: 55%;
+    padding: 5vw 4vw;
+}
+
+.section1 h1 {
+    font-size: 5vw;
+    line-height: 4.6vw;
+}
+
+.section1 h1 span {
+    color: #FF735C;
+}
+
+.section1 p {
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: #666;
+    width: 80%;
+    margin-top: 2vw;
+    margin-bottom: 3vw;
+}
+
+
+.btn {
+    background-color: #FF735C;
+    color: white;
+    font: size 1vw;
+    padding: 1.60vw 3vw;
+    margin: 2vw 1vw;
+    border-radius: 1.9vw;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+.btn:hover {
+    background-color: #FF735C;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.section2 {
+    height: 100%;
+    width: 45%;
+
+}
+
+.section2 img {
+    background-size: cover;
+    width: 100%;
+    height: 99%;
+}
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+
+
+    .main {
+        padding: 2vw 6vw;
+        height: 70px;
+    
+    }
+
+    .logo {
+        font-size: 6vw;
+        font-weight: 800;
+    }
+
+    .section-part {
+        display: none;
+    }
+
+    .main i {
+        display: block;
+        font: size 1.4vw;
+    }
+
+    .btn {
+        font-size: 3vw;
+        font-weight: 600;
+        padding: 3vw 4vw;
+        margin: 1vw;
+    }
+
+    .content {
+        height: calc(100% - 70px);
+        flex-direction: column;
+    }
+
+    .section1 {
+        width: 100%;
+        height: 55%;
+
+    }
+
+    .section1 h1 {
+        width: 85%;
+        font-size: 7vw;
+        line-height: 8vw;
+        font-weight: 700;
+        margin-bottom: 2vw;
+    }
+
+    .section1 p {
+        font-size: 3vw;
+        color: #666;
+        font-weight: 400;
+        margin-top: 4vw;
+        margin-bottom: 6vw;
+    }
+
+
+    .section2 {
+        width: 100%;
+        height: 45%;
+    }
+}
